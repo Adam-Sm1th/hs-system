@@ -1,2 +1,2 @@
-# hss-System
+# hs-system
 基于SpringBoot VueElement Echarts实现的医护排班管理系统

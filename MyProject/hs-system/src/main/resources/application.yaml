@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hssys #输入自己的数据库信息
+    username: #输入自己的数据库信息
+    password: #输入自己的数据库信息
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: #输入自己的数据库信息
+      database: 0
+      lettuce:
+        pool:
+          min-idle: 0
+          max-idle: 8
+          max-wait: -1ms
+          max-active: 16
+  mail:
+    host: #输入自己的邮箱信息
+    username: #输入自己的邮箱信息
+    password: #输入自己的邮箱信息
+    port: #输入自己的邮箱信息
+    protocol: smtp
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+sky:
+  alioss:
+    endpoint: #输入自己的阿里云信息
+    access-key-id: #输入自己的阿里云信息
+    access-key-secret: #输入自己的阿里云信息
+    bucket-name: #输入自己的阿里云信息
+
+
+
+
